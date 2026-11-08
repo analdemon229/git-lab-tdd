@@ -32,3 +32,7 @@ def rename_task(tasks, index, title):
 
 def reopen_task(tasks, index):
     tasks[index]["done"] = False
+
+
+def count_done(tasks):
+    return sum(task["done"] for task in tasks)
