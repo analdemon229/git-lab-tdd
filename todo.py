@@ -16,3 +16,7 @@ def count_tasks(tasks):
 
 def finish_task(tasks, index):
     tasks[index]["done"] = True
+
+
+def delete_task(tasks, index):
+    tasks.pop(index)
