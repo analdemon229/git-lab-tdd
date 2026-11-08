@@ -28,3 +28,7 @@ def get_task(tasks, index):
 
 def rename_task(tasks, index, title):
     tasks[index]["title"] = title
+
+
+def reopen_task(tasks, index):
+    tasks[index]["done"] = False
