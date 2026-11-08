@@ -20,3 +20,7 @@ def finish_task(tasks, index):
 
 def delete_task(tasks, index):
     tasks.pop(index)
+
+
+def get_task(tasks, index):
+    return tasks[index]
