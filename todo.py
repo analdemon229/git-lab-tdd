@@ -8,3 +8,7 @@ def add_task(tasks, title):
 
 def get_tasks(tasks):
     return tasks.copy()
+
+
+def count_tasks(tasks):
+    return len(tasks)
