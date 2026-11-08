@@ -4,3 +4,7 @@ def create_list():
 
 def add_task(tasks, title):
     tasks.append({"title": title, "done": False})
+
+
+def get_tasks(tasks):
+    return tasks.copy()
