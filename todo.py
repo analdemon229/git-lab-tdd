@@ -35,11 +35,11 @@ def reopen_task(tasks, index):
 
 
 def count_done(tasks):
-    return sum(task["done"] for task in tasks)
+    return len(done_tasks(tasks))
 
 
 def count_pending(tasks):
-    return len(tasks) - count_done(tasks)
+    return len(pending_tasks(tasks))
 
 
 def pending_tasks(tasks):
@@ -51,7 +51,7 @@ def done_tasks(tasks):
 
 
 def clear_done(tasks):
-    tasks[:] = [task for task in tasks if not task["done"]]
+    tasks[:] = pending_tasks(tasks)
 
 
 def exists_task(tasks, title):
