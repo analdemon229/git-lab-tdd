@@ -48,3 +48,7 @@ def pending_tasks(tasks):
 
 def done_tasks(tasks):
     return [task for task in tasks if task["done"]]
+
+
+def clear_done(tasks):
+    tasks[:] = [task for task in tasks if not task["done"]]
