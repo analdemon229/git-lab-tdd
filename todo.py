@@ -44,3 +44,7 @@ def count_pending(tasks):
 
 def pending_tasks(tasks):
     return [task for task in tasks if not task["done"]]
+
+
+def done_tasks(tasks):
+    return [task for task in tasks if task["done"]]
