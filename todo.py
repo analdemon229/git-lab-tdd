@@ -24,3 +24,7 @@ def delete_task(tasks, index):
 
 def get_task(tasks, index):
     return tasks[index]
+
+
+def rename_task(tasks, index, title):
+    tasks[index]["title"] = title
