@@ -52,3 +52,7 @@ def done_tasks(tasks):
 
 def clear_done(tasks):
     tasks[:] = [task for task in tasks if not task["done"]]
+
+
+def exists_task(tasks, title):
+    return any(task["title"] == title for task in tasks)
