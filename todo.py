@@ -12,3 +12,7 @@ def get_tasks(tasks):
 
 def count_tasks(tasks):
     return len(tasks)
+
+
+def finish_task(tasks, index):
+    tasks[index]["done"] = True
