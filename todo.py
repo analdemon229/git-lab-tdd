@@ -36,3 +36,7 @@ def reopen_task(tasks, index):
 
 def count_done(tasks):
     return sum(task["done"] for task in tasks)
+
+
+def count_pending(tasks):
+    return len(tasks) - count_done(tasks)
